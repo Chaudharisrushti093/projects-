@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Srushti Chaudhari | Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI", Arial, sans-serif;
+    background:#f7f9fc;
+    color:#172033;
+    line-height:1.6;
+}
+
+
+/* ================= NAVBAR ================= */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(255,255,255,0.96);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 2px 15px rgba(0,0,0,0.07);
+    z-index:1000;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:800;
+    color:#2563eb;
+}
+
+.logo span{
+    color:#111827;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:28px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#374151;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#2563eb;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    padding:130px 8% 70px;
+    background:linear-gradient(135deg,#eef5ff,#ffffff,#f5f3ff);
+}
+
+.hero-text{
+    max-width:650px;
+}
+
+.small-title{
+    color:#2563eb;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:12px;
+}
+
+.hero h1{
+    font-size:55px;
+    line-height:1.15;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#2563eb;
+}
+
+.hero h2{
+    font-size:24px;
+    color:#4b5563;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#6b7280;
+    font-size:17px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:13px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.primary{
+    background:#2563eb;
+    color:white;
+}
+
+.primary:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+.secondary{
+    border:2px solid #2563eb;
+    color:#2563eb;
+}
+
+.secondary:hover{
+    background:#2563eb;
+    color:white;
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile-box{
+    width:330px;
+    height:330px;
+    flex-shrink:0;
+    border-radius:50%;
+    padding:10px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    box-shadow:0 20px 50px rgba(37,99,235,0.25);
+}
+
+.profile-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid white;
+}
+
+
+/* ================= COMMON ================= */
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:36px;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#6b7280;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:white;
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-content p{
+    color:#5b6472;
+    font-size:17px;
+}
+
+
+/* ================= HIGHLIGHTS ================= */
+
+.highlights{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    max-width:1050px;
+    margin:auto;
+}
+
+.highlight{
+    background:white;
+    padding:28px;
+    text-align:center;
+    border-radius:14px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.highlight:hover{
+    transform:translateY(-7px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.10);
+}
+
+.number{
+    font-size:30px;
+    font-weight:800;
+    color:#2563eb;
+}
+
+.highlight h3{
+    margin-top:5px;
+}
+
+.highlight p{
+    color:#6b7280;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    max-width:1050px;
+    margin:auto;
+}
+
+.skill{
+    background:white;
+    padding:25px;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.skill:hover{
+    transform:translateY(-7px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.10);
+}
+
+.skill-icon{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.skill h3{
+    color:#2563eb;
+    margin-bottom:8px;
+}
+
+.skill p{
+    color:#6b7280;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.projects{
+    background:white;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.project{
+    background:#f8fafc;
+    padding:28px;
+    border-radius:14px;
+    border:1px solid #e5e7eb;
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:translateY(-7px);
+    border-color:#2563eb;
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.project h3{
+    color:#1e3a8a;
+    margin-bottom:12px;
+}
+
+.project p{
+    color:#6b7280;
+    margin-bottom:15px;
+}
+
+.project-tag{
+    display:inline-block;
+    padding:5px 12px;
+    background:#dbeafe;
+    color:#1d4ed8;
+    border-radius:20px;
+    font-size:13px;
+    margin:3px;
+}
+
+
+/* ================= EDUCATION ================= */
+
+.education-card{
+    max-width:850px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.06);
+}
+
+.education-card h3{
+    color:#1e3a8a;
+    font-size:22px;
+}
+
+.college{
+    font-weight:600;
+    color:#374151;
+    margin:5px 0;
+}
+
+.education-card p{
+    color:#6b7280;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#eef5ff;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+}
+
+.contact-box p{
+    margin-bottom:15px;
+    color:#4b5563;
+}
+
+.contact-links{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.contact-links a{
+    text-decoration:none;
+    color:#2563eb;
+    background:white;
+    padding:12px 20px;
+    border-radius:8px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.contact-links a:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateY(-3px);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#111827;
+    color:#d1d5db;
+    text-align:center;
+    padding:25px;
+}
+
+footer span{
+    color:#60a5fa;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px){
+
+    nav{
+        padding:15px 5%;
+    }
+
+    nav ul{
+        gap:12px;
+        font-size:14px;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:40px;
+        padding-top:140px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero h2{
+        font-size:21px;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .profile-box{
+        width:250px;
+        height:250px;
+    }
+}
+
+@media(max-width:550px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    section{
+        padding:70px 5%;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+    <div class="logo">
+        Srushti<span>.</span>
+    </div>
+
+    <ul>
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#education">Education</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <div class="small-title">
+            CLOUD COMPUTING • AWS • TECHNOLOGY
+        </div>
+
+        <h1>
+            Hi, I'm <span>Srushti Chaudhari</span>
+        </h1>
+
+        <h2>
+            B.Sc. Cloud Computing Student
+            & Technology Enthusiast
+        </h2>
+
+        <p>
+            I am passionate about Cloud Computing, AWS and modern
+            technologies. I enjoy learning new concepts, building
+            practical projects and continuously improving my
+            technical skills.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#projects" class="btn primary">
+                View My Projects
+            </a>
+
+            <a href="#contact" class="btn secondary">
+                Let's Connect
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="profile-box">
+
+        <img src="profile.jpeg" alt="Srushti Chaudhari">
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="section-title">
+
+        <h2>About Me</h2>
+
+        <p>Passionate about Cloud Computing & Technology</p>
+
+    </div>
+
+    <div class="about-content">
+
+        <p>
+            Hello! I'm Srushti Chaudhari, a B.Sc. Cloud Computing
+            student interested in Cloud Computing, AWS, programming,
+            Linux and modern web technologies. I enjoy exploring
+            new technologies and turning my learning into practical
+            projects. My goal is to continuously improve my
+            technical knowledge and build useful professional
+            solutions.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HIGHLIGHTS ================= -->
+
+<section>
+
+    <div class="section-title">
+
+        <h2>My Highlights</h2>
+
+        <p>A quick look at my academic and technical journey</p>
+
+    </div>
+
+    <div class="highlights">
+
+
+        <!-- 10TH -->
+
+        <div class="highlight">
+
+            <div class="number">
+                91.80%
+            </div>
+
+            <h3>
+                10th
+            </h3>
+
+            <p>
+                Academic Performance
+            </p>
+
+        </div>
+
+
+        <!-- SGPA -->
+
+        <div class="highlight">
+
+            <div class="number">
+                9.00
+            </div>
+
+            <h3>
+                SGPA
+            </h3>
+
+            <p>
+                Academic Performance
+            </p>
+
+        </div>
+
+
+        <!-- DEGREE -->
+
+        <div class="highlight">
+
+            <div class="number">
+                B.Sc.
+            </div>
+
+            <h3>
+                Cloud Computing
+            </h3>
+
+            <p>
+                Undergraduate Program
+            </p>
+
+        </div>
+
+
+        <!-- PROJECTS -->
+
+        <div class="highlight">
+
+            <div class="number">
+                3
+            </div>
+
+            <h3>
+                Cloud Projects
+            </h3>
+
+            <p>
+                Academic Projects
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+    <div class="section-title">
+
+        <h2>
+            Technical Skills
+        </h2>
+
+        <p>
+            Technologies and tools I'm learning
+        </p>
+
+    </div>
+
+
+    <div class="skills-container">
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                ☁️
+            </div>
+
+            <h3>
+                AWS
+            </h3>
+
+            <p>
+                EC2, S3, EBS, VPC and Elastic Load Balancer
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                📊
+            </div>
+
+            <h3>
+                Big Data
+            </h3>
+
+            <p>
+                Hadoop, HDFS, Hive and Data Pipelines
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                🐍
+            </div>
+
+            <h3>
+                Python
+            </h3>
+
+            <p>
+                Programming and problem solving fundamentals
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                🐧
+            </div>
+
+            <h3>
+                Linux
+            </h3>
+
+            <p>
+                Linux commands and cloud environment basics
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                💻
+            </div>
+
+            <h3>
+                Bash Scripting
+            </h3>
+
+            <p>
+                Command line operations and basic scripting
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                🌐
+            </div>
+
+            <h3>
+                HTML & CSS
+            </h3>
+
+            <p>
+                Responsive and modern website development
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="projects" id="projects">
+
+    <div class="section-title">
+
+        <h2>
+            My Projects
+        </h2>
+
+        <p>
+            My academic and practical cloud projects
+        </p>
+
+    </div>
+
+
+    <div class="project-container">
+
+
+        <!-- PROJECT 1 -->
+
+        <div class="project">
+
+            <h3>
+                🖥️ Virtualized Infrastructure for a Small Organization
+            </h3>
+
+            <p>
+                Designed and documented a virtualized infrastructure
+                for a small organization using Virtual Machines.
+                The project focused on virtualization concepts,
+                infrastructure design and resource management.
+            </p>
+
+            <span class="project-tag">
+                Virtual Machines
+            </span>
+
+            <span class="project-tag">
+                Virtualization
+            </span>
+
+            <span class="project-tag">
+                Infrastructure Design
+            </span>
+
+        </div>
+
+
+        <!-- PROJECT 2 -->
+
+        <div class="project">
+
+            <h3>
+                🌐 Static Website Hosting on AWS S3
+            </h3>
+
+            <p>
+                Created and hosted a static website using Amazon S3.
+                Configured the S3 bucket for static website hosting
+                and deployed the website using HTML and CSS.
+            </p>
+
+            <span class="project-tag">
+                AWS S3
+            </span>
+
+            <span class="project-tag">
+                HTML
+            </span>
+
+            <span class="project-tag">
+                CSS
+            </span>
+
+        </div>
+
+
+        <!-- PROJECT 3 -->
+
+        <div class="project">
+
+            <h3>
+                ⚖️ EC2 with Load Balancer Setup
+            </h3>
+
+            <p>
+                Deployed multiple EC2 instances and configured
+                an Elastic Load Balancer to distribute incoming
+                traffic. The setup focused on high availability
+                and fault tolerance.
+            </p>
+
+            <span class="project-tag">
+                AWS EC2
+            </span>
+
+            <span class="project-tag">
+                Elastic Load Balancer
+            </span>
+
+            <span class="project-tag">
+                Auto Scaling
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education">
+
+    <div class="section-title">
+
+        <h2>
+            Education
+        </h2>
+
+        <p>
+            My academic journey
+        </p>
+
+    </div>
+
+
+    <div class="education-card">
+
+        <h3>
+            B.Sc. Cloud Computing
+        </h3>
+
+        <div class="college">
+            New Arts, Commerce & Science College, Ahmednagar
+        </div>
+
+        <p>
+            Undergraduate student specializing in Cloud Computing,
+            AWS, programming, Big Data technologies and modern
+            computing concepts.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <div class="section-title">
+
+        <h2>
+            Let's Connect
+        </h2>
+
+        <p>
+            Feel free to connect with me
+        </p>
+
+    </div>
+
+
+    <div class="contact-box">
+
+        <p>
+            I am interested in Cloud Computing, AWS, technology
+            and opportunities that help me learn and grow.
+        </p>
+
+
+        <div class="contact-links">
+
+            <a href="mailto:srushtichaudhari093@gmail.com">
+                📧 Email
+            </a>
+
+            <a href="https://github.com/" target="_blank">
+                💻 GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank">
+                🔗 LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 <span>Srushti Chaudhari</span>
+        | Built with HTML & CSS
+    </p>
+
+</footer>
+
+
+</body>
+</html>
