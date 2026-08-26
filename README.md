@@ -1,13 +1,13 @@
 S3 Profile Website
 
-# Project Overview
+## Project Overview
 
 This project demonstrates how to host a simple Profile Website using Amazon S3 Static Website Hosting.
 
 The profile website was created using HTML and hosted on an AWS S3 bucket. A profile image was also uploaded to the S3 bucket and displayed on the website.
 
 ---
-# Technologies Used
+## Technologies Used
 
 - AWS S3
 - HTML
@@ -20,7 +20,7 @@ HTML + Profile Image → S3 Bucket → Static Website Hosting → Website URL �
 
 ---
 
-# Steps Performed
+## Steps Performed
 
 1. Created an AWS S3 bucket.
 2. Created a profile website using HTML.
@@ -32,20 +32,20 @@ HTML + Profile Image → S3 Bucket → Static Website Hosting → Website URL �
 
 ---
 
-# Project Files
+## Project Files
 
 - "index.html" – Main profile website page.
 - "profile.jpeg" – Profile image used on the website.
 
  --- 
 
-## Result
+# Result
 
 The Profile Website was successfully hosted on Amazon S3 and accessed through the S3 website endpoint.
 
 ---
 
-# Author
+## Author
 
 Srushti Chaudhari
 
